@@ -64,7 +64,7 @@
     font-size: .8em;
     color: var(--neutral-stat-headings);
     line-height: 1.7em;
-    margin-bottom: 3em;
+    
 }
 span{
     color: var(--primary-accent);
@@ -73,6 +73,7 @@ span{
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    padding-top: 4em;
 }
 .stat__title{
     font-family: var(--ff-headings);
@@ -105,7 +106,7 @@ span{
         order: 1;
         flex-basis: 50%;
         text-align: left;    
-        padding: 4em;
+        padding: 3em;
     }
     .card__image .card__image--mobile{
         display: none;
@@ -116,11 +117,11 @@ span{
         border-radius: 0 6px 6px 0;
     }
     .card__title{
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .card__text{
         font-size: 1em;
-    }
+        }
     .stats{
         display: flex;
         flex-direction: row;
