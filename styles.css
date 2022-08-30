@@ -56,7 +56,6 @@
     font-family: var(--ff-headings);
     font-weight: 700;
     color: var(--neutral-main-heading) ;
-    margin-bottom: 1em;
 }
 .card__text{
     font-family: var(--ff-headings);
@@ -64,7 +63,7 @@
     font-size: .8em;
     color: var(--neutral-stat-headings);
     line-height: 1.7em;
-    
+    padding-top: 1em;
 }
 span{
     color: var(--primary-accent);
