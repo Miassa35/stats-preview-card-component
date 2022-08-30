@@ -106,7 +106,7 @@ span{
         order: 1;
         flex-basis: 50%;
         text-align: left;    
-        padding: 3em;
+        padding: 4em;
     }
     .card__image .card__image--mobile{
         display: none;
@@ -117,7 +117,7 @@ span{
         border-radius: 0 6px 6px 0;
     }
     .card__title{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .card__text{
         font-size: 1em;
