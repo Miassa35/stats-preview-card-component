@@ -14,10 +14,13 @@
     margin: 0;
     padding: 0;
 }
-.container{
+body{
     background-color: var(--primary-main-background);
     min-height: 100vh;
-    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0;
 }
 .card__image .card__image--descktop{
     display: none;
@@ -27,24 +30,16 @@
     display: block;
     object-fit: cover;
     border-radius: 6px 6px 0 0;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 .card__image{
-    position: relative;
-    z-index: 1;
-}
-.card__image::after{
-    content: '';
-    position: absolute;
-    display: inline-block;
-    inset: 0;
-    background-color: var(--primary-accent);
-    opacity: .49;
     border-radius: 6px 6px 0 0;
-    z-index: 0;
+    background-color: var(--primary-accent);
 }
 .card{
+    width: 80%; 
     margin: auto;
-    width: 80%;
     background-color: var(--primary-card-background);
     border-radius: 6px;
 }
@@ -60,7 +55,7 @@
 .card__text{
     font-family: var(--ff-headings);
     font-weight: 400;
-    font-size: .8em;
+    font-size: .8rem;
     color: var(--neutral-stat-headings);
     line-height: 1.7em;
     padding-top: 1em;
@@ -82,27 +77,22 @@ span{
 .stat__text{
     font-family: var(--ff-headings);
     font-weight: 400;
-    font-size: .8em;
+    font-size: .8rem;
     line-height: 1.7em;
     color: var(--neutral-stat-headings);
 }
-@media (min-width:660px) and (max-width:1440px){
-    .container{
-        display: flex;
-    }
+@media (min-width:660px){
     .card{
         display: flex;
         border-radius: 6px;
+        max-width: 1110px;
     }
     .card__image{
-        order: 2;
         flex-basis: 50%;
-    }
-    .card__image::after{
         border-radius: 0 6px 6px 0;
     }
     .card__content{
-        order: 1;
+        order: -1;
         flex-basis: 50%;
         text-align: left;    
         padding: 4em;
@@ -113,17 +103,20 @@ span{
     .card__image .card__image--descktop{
         display: block;
         width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        opacity: 0.8;
         border-radius: 0 6px 6px 0;
     }
     .card__title{
-        font-size: 2.2em;
+        font-size: 2.2rem;
     }
     .card__text{
-        font-size: 1em;
+        font-size: 1rem;
         }
     .stats{
         display: flex;
         flex-direction: row;
-        gap: 5em;
+        justify-content: space-between;
     }
 }
